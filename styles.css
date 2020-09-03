@@ -1,0 +1,72 @@
+html {
+    height: 100%;
+    font-family: "roboto";
+    background-color: rgb(196, 196, 196);
+}
+
+#calculator {
+    margin: auto;
+    width: 400px;
+}
+
+#buttons {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#display {
+    border: 2px solid black;
+    height: 46px;
+    font-size: 40px;
+    width: 396px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+}
+
+.number-button, #decimal-button {
+    background-color: blue;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.number-button:hover, #decimal-button:hover {
+    background-color: rgb(106, 149, 214);
+}
+
+.operation-button {
+    background-color: red;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+.operation-button:hover {
+    background-color: rgb(214, 100, 100);
+}
+
+#zero-button, #equals-button {
+    width: 200px;
+}
+
+#clear-button, #equals-button, #backspace-button {
+    background-color: green;
+    font-size: 20px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+#clear-button:hover, #equals-button:hover, #backspace-button:hover {
+    background-color: rgb(86, 212, 86);
+}
+
+button:disabled {
+    opacity: 50%;
+    cursor: not-allowed;
+}
